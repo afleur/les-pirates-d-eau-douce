@@ -1,4 +1,5 @@
 class BoatsController < ApplicationController
+  mount_uploader :photo, PhotoUploader
   before_action :set_boats, only: :show
 
   def new
