@@ -5,16 +5,19 @@
 
 <h1> <%= @boat.name %> </h1>
 
-<p>Proposé par <%= @boat.user_id %></p>
+<h4>Proposé par <%= @boat.user_id %></h4>
 
 <h3><%= @boat.category %></h3>
 <p><i class="fas fa-map-marker-alt"></i>  <%= @boat.address %></p>
-<p><%= @boat.price_per_day %> CHF / jour </p>
+<p><i class="fas fa-coins"></i></i>  <%= @boat.price_per_day %> CHF / jour </p>
 
+<hr>
+<h3> Description: </h3>
 <p><%= @boat.description %></p>
 
 
-<%= link_to "Back to list", boats_path %>
+<button type="button" class="btn btn-light"><%= link_to "Back to list", boats_path %></button>
+
 
 </div>
 
