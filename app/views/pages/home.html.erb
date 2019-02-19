@@ -21,4 +21,94 @@
 
 </div>
 
+<div id="searchbar">
+  <div class="searchbar">
+    <form id="searchbar-form" action="/s">
 
+      <div class="searchbar__input-wrapper">
+
+        <label class="searchbar__location">
+          <span class="screen-reader-only">
+            Dove vuoi andare?
+          </span>
+          <input
+            id="location"
+            type="text"
+            class="input-large input-contrast"
+            autocomplete="off"
+            name="location"
+            placeholder="Dove vuoi andare?" />
+            <div id="searchbar-location-error" class="searchbar__location-error hide">
+              Seleziona la località
+            </div>
+        </label>
+
+        <label class="searchbar__checkin">
+          <span class="screen-reader-only">
+            Check-in
+          </span>
+          <input
+            id="checkin"
+            type="text"
+            class="checkin input-large input-contrast"
+            name="checkin"
+            placeholder="Check-in" />
+        </label>
+
+        <label class="searchbar__checkout">
+          <span class="screen-reader-only">
+            Check-out
+          </span>
+          <input
+            id="checkout"
+            type="text"
+            class="checkout input-large input-contrast"
+            name="checkout"
+            placeholder="Check-out" />
+        </label>
+
+        <label class="searchbar__guests">
+          <span class="screen-reader-only">
+            Numero di persone
+          </span>
+          <div class="select select-large">
+            <select id="guests" name="guests">
+              <option value="1">1 ospite</option>
+<option value="2">2 ospiti</option>
+<option value="3">3 ospiti</option>
+<option value="4">4 ospiti</option>
+<option value="5">5 ospiti</option>
+<option value="6">6 ospiti</option>
+<option value="7">7 ospiti</option>
+<option value="8">8 ospiti</option>
+<option value="9">9 ospiti</option>
+<option value="10">10 ospiti</option>
+<option value="11">11 ospiti</option>
+<option value="12">12 ospiti</option>
+<option value="13">13 ospiti</option>
+<option value="14">14 ospiti</option>
+<option value="15">15 ospiti</option>
+<option value="16">16+ ospiti</option>
+            </select>
+          </div>
+        </label>
+
+      </div>
+
+      <button
+        id="submit_location"
+        type="submit"
+        class="searchbar__submit btn btn-primary btn-large">
+        Cerca
+      </button>
+
+      <input type="hidden" name="source" value="bb">
+
+    </form>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
