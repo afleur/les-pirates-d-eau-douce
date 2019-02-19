@@ -1,5 +1,5 @@
 <div>
-  <%= link_to 'Rent my boat', new_user_boat_path, :class => "btn btn-default" %>
+  <%= link_to 'Rent my boat', new_boat_path, :class => "btn btn-default" %>
 </div>
 
 
@@ -8,7 +8,7 @@
 <% @boats.each do |boat| %>
 <ul>
   <li>
-  <%= link_to boat.name, boats_path(boat) %>
+  <%= link_to boat.name, boat_path(boat) %>
   <%= boat.category %>
   <%= boat.address %>
   <%= boat.price_per_day %>
