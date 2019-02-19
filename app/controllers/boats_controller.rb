@@ -1,6 +1,6 @@
 class BoatsController < ApplicationController
   before_action :set_boats, only: :show
-  skip_before_action :authenticate_user!, only: :index
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def new
     @boat = Boat.new
