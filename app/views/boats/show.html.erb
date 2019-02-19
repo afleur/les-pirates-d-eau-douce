@@ -1,7 +1,10 @@
 
 <div class="container">
+  
+<% unless @boat.photo_url.nil? %>
+  <%= cl_image_tag @boat.photo, height: 400, width: 600, crop: :fill, radius: 20 %>
+<% end %>
 
-<%= cl_image_tag @boat.photo, height: 400, width: 600, crop: :fill, radius: 20 %>
 
 <h1> <%= @boat.name %> </h1>
 

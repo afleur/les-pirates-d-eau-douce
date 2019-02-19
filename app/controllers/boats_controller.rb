@@ -1,15 +1,14 @@
 class BoatsController < ApplicationController
   before_action :set_boats, only: :show
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def new
-    @user = User.find(params[:user_id])
     @boat = Boat.new
   end
 
   def create
-    @user = User.find(params[:user_id])
     @boat = Boat.new(params_boat)
-    @boat.user = @user
+    @boat.user = current_user
     if @boat.save
       redirect_to boat_path(@boat), notice: 'Boat was successfully added.'
     else
@@ -19,6 +18,7 @@ class BoatsController < ApplicationController
 
   def index
     @boats = Boat.all
+    @user = current_user
   end
 
   def show
