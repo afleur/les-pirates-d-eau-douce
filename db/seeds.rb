@@ -33,15 +33,22 @@ url = "https://www.clickandboat.com/location-bateau/recherche?where=Gen%C3%A8ve,
 html_file = open(url).read
 html_doc = Nokogiri::HTML(html_file)
 
-html_doc.search('.itemProduct').each do |element|
-  name = element.attr('')
-  category = element.attr('data-type-boat')
-  price_per_day = element.attr('data-prix-jour-acl')
+# html_doc.search('.itemProduct').each do |element|
+  # name = element.attr('alt')
+  # category = element.attr('data-type-boat')
+  # price_per_day = element.attr('data-prix-jour-acl')
   # picture = element.attr('src')
   # image_url = element.attr('src')
   # image_url = element.attr('src')
-  Boat.create!(name: name, category: category, price_per_day: price_per_day, user_id: 11)
+  # boat = Boat.create!(name: name, category: category, price_per_day: price_per_day, user_id: 1)
 
+
+html_doc.search('.itemCap').each do |element|
+  name_boat = element.attr('h3')
+  boat = Boat.create!(name: name_boat, user_id: 1)
 end
+
+
+
 
 puts 'Finished!'
