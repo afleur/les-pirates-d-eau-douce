@@ -2,25 +2,6 @@
   <h1> Les pirates d'eau douce </h1>
   <p> The easy way for sailing on Lake Geneva </p>
 
-
-
-  <div class="location" style="width:25%">
-    <input type="text" id="search" class="GoogleAutoMap" name="where" placeholder="Geneva, Ouchy ..." autofocus="" data-autocomplete-id="0" autocomplete="off">
-    <input type="submit" name="submit" id="submit" value="search">
-  </div>
-
-  <div class="entry date" style="width:15%">
-    <input type="text" id="date-from" class="datepicker ll-skin-melon hasDatepicker" placeholder="Début" readonly="">
-    <input type="hidden" id="date-from_val" name="DateDebut">
-  </div>
-
-    <div class="entry date datepicker-div icon-time-calendar" style="width:15%">
-  <input type="text" id="date-to" class="datepicker ll-skin-melon" placeholder="Fin">
-  <input type="hidden" id="date-to_val" name="DateFin">
-    </div>
-
-</div>
-
 <div id="searchbar">
   <div class="searchbar">
     <form id="searchbar-form" action="/s">
@@ -29,7 +10,7 @@
 
         <label class="searchbar__location">
           <span class="screen-reader-only">
-            Dove vuoi andare?
+            Select your port:
           </span>
           <input
             id="location"
@@ -37,9 +18,9 @@
             class="input-large input-contrast"
             autocomplete="off"
             name="location"
-            placeholder="Dove vuoi andare?" />
+            placeholder="Geneva, Ouchy..." />
             <div id="searchbar-location-error" class="searchbar__location-error hide">
-              Seleziona la località
+              Select your port:
             </div>
         </label>
 
@@ -69,26 +50,16 @@
 
         <label class="searchbar__guests">
           <span class="screen-reader-only">
-            Numero di persone
+            Boat type
           </span>
-          <div class="select select-large">
-            <select id="guests" name="guests">
-              <option value="1">1 ospite</option>
-<option value="2">2 ospiti</option>
-<option value="3">3 ospiti</option>
-<option value="4">4 ospiti</option>
-<option value="5">5 ospiti</option>
-<option value="6">6 ospiti</option>
-<option value="7">7 ospiti</option>
-<option value="8">8 ospiti</option>
-<option value="9">9 ospiti</option>
-<option value="10">10 ospiti</option>
-<option value="11">11 ospiti</option>
-<option value="12">12 ospiti</option>
-<option value="13">13 ospiti</option>
-<option value="14">14 ospiti</option>
-<option value="15">15 ospiti</option>
-<option value="16">16+ ospiti</option>
+          <div class="boat type">
+            <select id="category" name="category">
+              <option value="Sailboat">Sailboat</option>
+              <option value="Motorboat">Motorboat</option>
+              <option value="Catamaran">Catamaran</option>
+              <option value="RIB">RIB</option>
+              <option value="Jet Ski">Jet Ski</option>
+              <option value="Houseboat">Houseboat</option>
             </select>
           </div>
         </label>
@@ -99,7 +70,7 @@
         id="submit_location"
         type="submit"
         class="searchbar__submit btn btn-primary btn-large">
-        Cerca
+        Search
       </button>
 
       <input type="hidden" name="source" value="bb">
@@ -111,4 +82,6 @@
       </div>
     </div>
   </div>
+</div>
+
 </div>
