@@ -3,7 +3,7 @@
 
 <h3><%= @boat.name %> | <%= @boat.price_per_day %> CHF / jour</h3>
 
-<p><%= @boat.picture %></p>
+<%= cl_image_tag @boat.photo, height: 300, width: 400, crop: :fill %>
 
 <p><%= @boat.description %></p>
 
