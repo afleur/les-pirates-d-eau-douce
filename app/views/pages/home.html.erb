@@ -1,2 +1,24 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <h1> Les pirates d'eau douce </h1>
+  <p> The easy way for sailing on Lake Geneva </p>
+
+
+
+  <div class="location" style="width:25%">
+    <input type="text" id="search" class="GoogleAutoMap" name="where" placeholder="Geneva, Ouchy ..." autofocus="" data-autocomplete-id="0" autocomplete="off">
+    <input type="submit" name="submit" id="submit" value="search">
+  </div>
+
+  <div class="entry date" style="width:15%">
+    <input type="text" id="date-from" class="datepicker ll-skin-melon hasDatepicker" placeholder="Début" readonly="">
+    <input type="hidden" id="date-from_val" name="DateDebut">
+  </div>
+
+    <div class="entry date datepicker-div icon-time-calendar" style="width:15%">
+  <input type="text" id="date-to" class="datepicker ll-skin-melon" placeholder="Fin">
+  <input type="hidden" id="date-to_val" name="DateFin">
+    </div>
+
+</div>
+
+
