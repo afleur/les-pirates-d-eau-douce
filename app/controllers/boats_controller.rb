@@ -1,5 +1,5 @@
 class BoatsController < ApplicationController
-  # before_action :set_boats, only: :show
+  before_action :set_boats, only: :show
 
   def new
     @user = User.find(params[:user_id])
@@ -11,7 +11,7 @@ class BoatsController < ApplicationController
     @boat = Boat.new(params_boat)
     @boat.user = @user
     if @boat.save
-      redirect_to boats_path(@boat), notice: 'Boat was successfully added.'
+      redirect_to boat_path(@boat), notice: 'Boat was successfully added.'
     else
       render :new
     end
@@ -21,8 +21,8 @@ class BoatsController < ApplicationController
     @boats = Boat.all
   end
 
-  # def show
-  # end
+  def show
+  end
 
   private
 

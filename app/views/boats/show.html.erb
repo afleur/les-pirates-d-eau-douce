@@ -1,2 +1,12 @@
-<h1>Boats#show</h1>
-<p>Find me in app/views/boats/show.html.erb</p>
+<h1> <%= @boat.name %> </h1>
+
+
+<h3><%= @boat.name %> | <%= @boat.price_per_day %> CHF / jour</h3>
+
+<p><%= @boat.picture %></p>
+
+<p><%= @boat.description %></p>
+
+<p><%= @boat.address %></p>
+
+<%= link_to "Back to list", boats_path %>
