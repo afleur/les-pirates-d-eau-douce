@@ -9,22 +9,22 @@ require 'faker'
 require 'open-uri'
 require 'nokogiri'
 
-# puts 'cleaning DB'
+puts 'cleaning DB'
 
-# User.destroy_all
+User.destroy_all
 
-# puts 'Creating 10 fake users...'
-# 10.times do
-#   user = User.new(
-#     first_name:  Faker::Name.first_name,
-#     last_name:   Faker::Name.last_name,
-#     email:       Faker::Internet.free_email,
-#     password:    Faker::Internet.password(10, 20)
-#   )
-#   user.save!
-# end
+puts 'Creating 10 fake users...'
+10.times do
+  user = User.new(
+    first_name:  Faker::Name.first_name,
+    last_name:   Faker::Name.last_name,
+    email:       Faker::Internet.free_email,
+    password:    Faker::Internet.password(10, 20)
+  )
+  user.save!
+end
 
-# puts 'Finished!'
+puts 'Finished!'
 
 puts 'Creating 10 fake boats...'
 
