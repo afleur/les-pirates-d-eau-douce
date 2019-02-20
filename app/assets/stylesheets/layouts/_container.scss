@@ -1,36 +1,33 @@
-.container {
+.container-show {
   margin: 0 auto;
   width: 500px;
   min-height: calc(100vh - 140px);
   color: grey;
 }
 
-.container a {
+.container-show  a {
   text-decoration: none,
 }
 
 
-.container a {
+.container-show  a {
   text-decoration: none;
 }
 
-.container h1 {
+.container-show  h1 {
   font-size: 35px;
 }
 
-.container h2 {
+.container-show  h2 {
   font-size: 20px;
 }
 
-.container h3 {
+.container-show  h3 {
   font-size: 25px;
 }
 
-.container h4 {
+.container-show  h4 {
   font-size: 18px;
   font-style: italic;
 }
 
-.photo_boat {
-  border-radius: 4px;
-}

@@ -1,58 +1,59 @@
 
 
 /* Your card CSS code here */
-.cards {
+
+.card {
+  height: 400px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center;
+  color: white;
   position: relative;
-  width: 400px;
-  height: 320px;
+  margin: 10px;
   background-color: white;
-  box-shadow: 1px 1px 2px lightgrey;
 }
 
-.card-body {
-  background-size: cover;
-  height: 200px;
-  color: #E5E5E5;
-}
-
-.card-avatar {
+.card-user {
   position: absolute;
-  right: 3px;
-  top: 3px;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
 }
-
-.card-body h1{
+.card-category {
   position: absolute;
-  left: 3px;
-  top: 3px;
-}
-
-.card-body  h2 {
-  position: absolute;
-  left: 3px;
-  top: 200px;
-}
-
-.card-body p {
-  position: absolute;
+  top: 10px;
+  left: 10px;
   font-size: 15px;
-  left: 3px;
-  top: 150px;
+  text-transform: uppercase;
+}
+.card-content{
+ height: 300px;
 }
 
-.card-footer{
-  display: flex;
-  justify-content: space-round;
-  margin: 0;
-  flex-direction: column;
+.card-body{
   position: absolute;
-  bottom: 5px;
-  color: #CED0D4;
+  bottom: 100px;
+  right: 10px;
+}
+// .card-description h2 {
+//   font-size: 24px;
+// }
+// .card-description p {
+//   font-size: 14px;
+//   opacity: 0.7;
+//   font-weight: lighter;
+// }
+.card-link:hover {
+  text-decoration: none;
+}
+.card-footer h2{
+  font-size: 20px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.6);
   text-decoration: none;
 }
 
-.card-social {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  }
+.card-footer p {
+  color: darkgrey;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
