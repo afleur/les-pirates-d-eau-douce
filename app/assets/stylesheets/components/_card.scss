@@ -1,0 +1,59 @@
+
+
+/* Your card CSS code here */
+
+.card {
+  height: 400px;
+  width: 100%;
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin: 10px;
+  background-color: white;
+}
+
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-content{
+ height: 300px;
+}
+
+.card-body{
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+}
+// .card-description h2 {
+//   font-size: 24px;
+// }
+// .card-description p {
+//   font-size: 14px;
+//   opacity: 0.7;
+//   font-weight: lighter;
+// }
+.card-link:hover {
+  text-decoration: none;
+}
+.card-footer h2{
+  font-size: 20px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.6);
+  text-decoration: none;
+}
+
+.card-footer p {
+  color: darkgrey;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
