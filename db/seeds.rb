@@ -61,7 +61,7 @@ puts 'Creating 20 fake boats...'
 
     La co-navigation permet également aux débutants, s'ils le souhaitent, de s'initier à la voile, en toute convivialité.",
     address: "Genève",
-    user: User.all.random,
+    user: User.all.sample,
   )
   boat_one.remote_photo_url = url_one
   boat_one.save!
@@ -77,7 +77,7 @@ puts 'Creating 20 fake boats...'
     Il est également équipé d'une stereo bluetooth avec chargeur USB et entrée auxiliaire mini jack.
     Je peux vous proposer des horaires flexibles entre 8h et 22h. ",
     address: "Genève",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_two.remote_photo_url = url_two
   boat_two.save!
@@ -91,7 +91,7 @@ puts 'Creating 20 fake boats...'
     Pour ceux qui désirent s'éclater en ski nautique ou en bouée tractée, l'équipement nécessaire est à bord du bateau pour assurer l'adrénaline. N’hésitez pas à nous communiquer vos envies personnelles afin de pouvoir vous faire une offre sur mesure.
     Notre skipper ‘David’ vous souhaite la bienvenue sur notre bateau LE GENT' LEMAN. Merci et à bientôt !",
     address: "Nyon",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_three.remote_photo_url = url_three
   boat_three.save!
@@ -107,7 +107,7 @@ puts 'Creating 20 fake boats...'
     Ce jet-ski est réservé à des personnes responsables et respectueuses, pas sérieux s' abstenir!
     Caution, permis bateau obligatoire et pièce d'identité vous seront demandés",
     address: "Ouchy",
-    user: User.all.random,
+    user: User.all.sample,
       )
       boat_four.remote_photo_url = url_four
       boat_four.save!
@@ -122,7 +122,7 @@ puts 'Creating 20 fake boats...'
     Ce catamaran peut accueillir 2 personnes pour une belle journée de navigation.
     C'est un bateau sportif avec trapèzes et spinnaker. Les gilets de sauvetage sont bien entendu fournis avec le bateau. ",
     address: "Evian",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_five.remote_photo_url = url_five
   boat_five.save!
@@ -140,7 +140,7 @@ puts 'Creating 20 fake boats...'
     A très bientôt,
     PS: Il n'y a pas besoin de permis pour naviguer avec mon bateau (seulement un 4 chevaux ce qui est suffisant pour un voilier) mais il est vivement conseillé de savoir faire un minimum de voile pour ne pas se retrouver en difficulté. Merci",
     address: "Genève",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_six.remote_photo_url = url_six
   boat_six.save!
@@ -156,7 +156,7 @@ puts 'Creating 20 fake boats...'
     Terrasse arrière abritée de plein pied avec le carré avec table amovible. Plage de bain.
     Le bateau consomme peu. Il est très maniable.",
     address: "Versoix",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_seven.remote_photo_url = url_seven
   boat_seven.save!
@@ -168,7 +168,7 @@ puts 'Creating 20 fake boats...'
     price_per_day: 130,
     description: "Grâce à ses couchages modulables dans la cabine et dans le salon, le Cirrus offre aux couples et aux petites familles (4 personnes) tout l'espace nécessaire pour conjuguer détente et style lors de leur séjour. Avec sa grande cabine à l'arrière, son salon et ses baies vitrées lumineuses, son pont supérieur et ses 2 postes de pilotage, le Cirrus dispose de tous les équipements nécessaires pour une croisière fluviale confortable !",
     address: "Rolle",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_eight.remote_photo_url = url_eight
   boat_eight.save!
@@ -185,7 +185,7 @@ puts 'Creating 20 fake boats...'
     Ce dernier est idéal pour passer une journée en famille ou entre amis jusqu'à 7 personnes à bord! Il possède un moteur de 220 CV et a été mis à l'eau en 2002.
     Amateur de vitesse et de sports nautiques, vous ne serez pas déçus",
     address: "Thonon-les-Bains",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_nine.remote_photo_url = url_nine
   boat_nine.save!
@@ -201,7 +201,7 @@ puts 'Creating 20 fake boats...'
     Parfait pour passer des journées inoubliables sur notre magnifique Lac Léman.
     Idéalement situé au port de Sciez-Sur-Léman, au coeur de la baie d'Excenevex et de sa plage de sable fin, vous êtes à 10 minutes d'Yvoire, 20 minutes de Thonon-les-Bains, 30 minutes d'Évian...",
     address: "Sciez-Sur-Léman",
-    user: User.all.random,
+    user: User.all.sample,
   )
   boat_ten.remote_photo_url = url_ten
   boat_ten.save!
@@ -225,7 +225,7 @@ En allant à l'ouest, vous pourrez vous rendre du côté de Genève avec ses nom
 Je peut aussi faire le capitaine pour les personnes sans permis !!
 Je connais très bien les plus beaux point de vues et crique.",
     address: "Evian-les-Bains",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_eleven.remote_photo_url = url_eleven
   boat_eleven.save!
@@ -252,7 +252,7 @@ C'est un voilier idéal pour découvrir le Lac Léman et ainsi profiter d'une ac
 
 En co-navigation, je serai très heureux de vous recevoir, que vous soyez novice ou expert de la navigation. ",
     address: "Versoix",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_twelve.remote_photo_url = url_twelve
   boat_twelve.save!
@@ -279,7 +279,7 @@ Pour de plus amples informations, n'hésitez pas à me contacter sur la messager
 
 A bientôt, ",
     address: "Genève",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_thirteen.remote_photo_url = url_thirteen
   boat_thirteen.save!
@@ -299,7 +299,7 @@ Il est demandé au moins deux ans de permis et une expérience nautique minimum.
 
 Possibilité de vous prêter un wake, gilet et palonnier moyennant 50 euros supplémentaires.",
     address: "Genève",
-    user: User.all.random,
+    user: User.all.sample,
   )
   boat_fourteen.remote_photo_url = url_fourteen
   boat_fourteen.save!
@@ -316,7 +316,7 @@ Ce bateau est très puissant, avec son moteur de 350 cv, mais aussi très agréa
 Il dispose d'un bain de soleil avant et de deux matelas arrière parfait pour profiter du paysage et travailler son bronzage !
 ",
     address: "Ouchy",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_fifteen.remote_photo_url = url_fifteen
   boat_fifteen.save!
@@ -361,7 +361,7 @@ Venez tester l'aventure et profiter de ce moment unique sur notre bateau ultra c
 
 Cordialement",
     address: "Genève",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_sixteen.remote_photo_url = url_sixteen
   boat_sixteen.save!
@@ -381,7 +381,7 @@ Parmi les nombreux équipements du bateau vous trouverez une arche de wakeboard 
 
 Il possède également une plate-forme de bain à l'arrière du bateau agréable et spacieuse, intégrant une échelle  facile d'utilisation. Il est équipé de matériel stéréo hi-fi à bord, prenant en charge vos pistes USB, auxiliaire et Bluetooth.",
     address: "Ouchy",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_seventeen.remote_photo_url = url_seventeen
   boat_seventeen.save!
@@ -399,7 +399,7 @@ De tempérament joueur, il est toujours partant pour une virée sur le lac, pour
 
 C'est un voilier très confortable avec ses 2 cabines, il accueille agréablement 2 couples pour une ou plusieurs nuits. Nous conseillons d'embarquer à 4 personnes maximum pour être tout à fait à l'aise. ",
     address: "Thonon-les-Bains",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_eighteen.remote_photo_url = url_eighteen
   boat_eighteen.save!
@@ -423,7 +423,7 @@ De son côté, l’espace habitable propose des cabines très réussies, un carr
 
 Basé dans le petit port de Nernier (la perle du lac), à 1 km d'Yvoire, village très connu pour son charme.  Vous apprécierez le calme et la bonne ambiance de cet endroit.",
     address: "Nernier",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_nineteen.remote_photo_url = url_nineteen
   boat_nineteen.save!
@@ -446,7 +446,7 @@ Au départ de Sciez, vous pourrez vous balader sur tout le lac. Je vous conseill
 Le carburant est à la charge du locataire.
 ",
     address: "Sciez-Sur-Léman",
-    user: User.all.random,
+    user: User.all.sample,
     )
   boat_twenty.remote_photo_url = url_twenty
   boat_twenty.save!
