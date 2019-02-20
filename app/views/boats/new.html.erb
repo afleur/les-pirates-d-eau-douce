@@ -1,13 +1,18 @@
-<h1>Add your boat</h1>
-
-<%= simple_form_for [@user, @boat] do |f| %>
-  <%= f.input :name %>
-  <%= f.input :category %>
-  <%= f.input :price_per_day %>
-  <%= f.input :description %>
-  <%= f.input :address %>
-  <%= f.input :photo %>
-  <%= f.input :photo_cache, as: :hidden %>
-  <%= f.submit class: 'btn btn-primary' %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset">
+      <h1>Add your boat</h1>
+        <%= simple_form_for [@user, @boat] do |f| %>
+          <%= f.input :name %>
+          <%= f.input :category %>
+          <%= f.input :price_per_day %>
+          <%= f.input :description %>
+          <%= f.input :address %>
+          <%= f.input :photo %>
+          <%= f.input :photo_cache, as: :hidden %>
+          <%= f.submit class: 'btn btn-primary' %>
+        <% end %>
+    </div>
+  </div>
+</div>
 
