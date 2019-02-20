@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'rentals/index'
+  get 'rentals/show'
+  get 'rentals/create'
+  get 'rentals/new'
+  get 'rentals/destroy'
+  get 'rentals/edit'
+  get 'rentals/update'
   devise_for :users
   root to: 'pages#home'
 
