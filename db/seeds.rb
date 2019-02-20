@@ -11,6 +11,7 @@ require 'nokogiri'
 
 puts 'cleaning DB'
 
+Boat.destroy_all
 User.destroy_all
 
 puts 'Creating 20 fake users...'
@@ -48,7 +49,7 @@ puts 'Creating 20 fake boats...'
 #   name_boat = element.attr('h3')
 
 
-  url = "https://res.cloudinary.com/afleur/image/upload/v1550598225/boat1.jpg"
+  url = "https://static1.clickandboat.com/v1/p/iaykapmodtz5o5vzcpkwtjad6ti0y5pb.big.jpg"
   boat_one = Boat.new(
     name: "FIRST 21",
     category: "Voilier",
@@ -61,9 +62,10 @@ puts 'Creating 20 fake boats...'
 
     La co-navigation permet également aux débutants, s'ils le souhaitent, de s'initier à la voile, en toute convivialité.",
     address: "Genève",
-    user_id: User.first)
-    boat_one.remote_photo_url = url
-    boat_one.save
+    user: User.first
+  )
+  boat_one.remote_photo_url = url
+  p boat_one.save!
 
 #   boat_two = Boat.create!(
 #     name: "MASTERCRAFT NXT20 2015",
