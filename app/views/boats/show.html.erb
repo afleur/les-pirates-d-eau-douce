@@ -8,8 +8,12 @@
 
     <h1> <%= @boat.name %> </h1>
 
-    <h4>Proposé par <%= @boat.user.first_name %></h4>
+    <h4>Contact <%= @boat.user.first_name %> : <%= @boat.user.email %></h4>
   </div>
+
+<!--  <div class="center btn-padding">
+    <%= link_to "Book this boat", boats_path, class:'btn btn-primary' %>
+  </div> -->
 
   <hr>
   <div class="info">
