@@ -2,23 +2,89 @@
   <h1> Les pirates d'eau douce </h1>
   <p> The easy way for sailing on Lake Geneva </p>
 
+  <button class="btn-primary"> <%= link_to "See all boats", boats_path %></button>
 
+<!-- <div id="searchbar">
+  <div class="searchbar">
+    <form id="searchbar-form" action="/boats">
 
-  <div class="location" style="width:25%">
-    <input type="text" id="search" class="GoogleAutoMap" name="where" placeholder="Geneva, Ouchy ..." autofocus="" data-autocomplete-id="0" autocomplete="off">
-    <input type="submit" name="submit" id="submit" value="search">
+      <div class="searchbar__input-wrapper">
+
+        <label class="searchbar__location">
+          <span class="screen-reader-only">
+            Select your port:
+          </span>
+          <input
+            id="location"
+            type="text"
+            class="input-large input-contrast"
+            autocomplete="off"
+            name="location"
+            placeholder="Geneva, Ouchy..." />
+            <div id="searchbar-location-error" class="searchbar__location-error hide">
+              Select your port:
+            </div>
+        </label>
+
+        <label class="searchbar__checkin">
+          <span class="screen-reader-only">
+            Check-in
+          </span>
+          <input
+            id="checkin"
+            type="text"
+            class="checkin input-large input-contrast"
+            name="checkin"
+            placeholder="Check-in" />
+        </label>
+
+        <label class="searchbar__checkout">
+          <span class="screen-reader-only">
+            Check-out
+          </span>
+          <input
+            id="checkout"
+            type="text"
+            class="checkout input-large input-contrast"
+            name="checkout"
+            placeholder="Check-out" />
+        </label>
+
+        <label class="searchbar__guests">
+          <span class="screen-reader-only">
+            Boat type
+          </span>
+          <div class="boat type">
+            <select id="category" name="category">
+              <option value="Sailboat">Sailboat</option>
+              <option value="Motorboat">Motorboat</option>
+              <option value="Catamaran">Catamaran</option>
+              <option value="RIB">RIB</option>
+              <option value="Jet Ski">Jet Ski</option>
+              <option value="Houseboat">Houseboat</option>
+            </select>
+          </div>
+        </label>
+
+      </div>
+
+      <button
+        id="submit_location"
+        type="submit"
+        class="searchbar__submit btn btn-primary btn-large">
+        Search
+      </button>
+
+      <input type="hidden" name="source" value="bb">
+
+    </form>
   </div>
-
-  <div class="entry date" style="width:15%">
-    <input type="text" id="date-from" class="datepicker ll-skin-melon hasDatepicker" placeholder="Début" readonly="">
-    <input type="hidden" id="date-from_val" name="DateDebut">
-  </div>
-
-    <div class="entry date datepicker-div icon-time-calendar" style="width:15%">
-  <input type="text" id="date-to" class="datepicker ll-skin-melon" placeholder="Fin">
-  <input type="hidden" id="date-to_val" name="DateFin">
-    </div>
-
 </div>
 
+      </div>
+    </div>
+  </div>
+</div>
 
+</div>
+ -->
