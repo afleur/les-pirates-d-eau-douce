@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container background">
 
   <div class="center">
     <% unless @boat.photo_url.nil? %>
@@ -14,6 +14,12 @@
   <div class="center btn-padding">
     <%= link_to "Book this boat", new_boat_rental_path(@boat.id), class:'btn btn-primary' %>
   </div>
+
+        <%= simple_form_for [@boat, @rental] do |f| %>
+        <%= f.input :checkindate, as: :string, required: false, input_html: {class: "datepicker"} %>
+        <%= f.input :checkoutdate, as: :string, required: false, wrapper_html: {class: "form-hidden"}, input_html: {class: "datepicker"}  %>
+        <%= f.submit class: 'btn btn-primary' %>
+      <% end %>
 
   <hr>
   <div class="info">

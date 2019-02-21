@@ -1,4 +1,4 @@
-<div class="container center">
+<div class="container center background">
   <div class="row">
     <div class="col-xs-4 col-xs-offset">
     <h1>Add your boat</h1>
@@ -15,4 +15,26 @@
     <% end %>
     </div>
   </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker2'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker2').datetimepicker({
+                    locale: 'ru'
+                });
+            });
+        </script>
+    </div>
 </div>
