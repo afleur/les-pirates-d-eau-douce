@@ -6,25 +6,27 @@
   <div class="container">
       <div class="row">
         <% @boats.each do |boat| %>
-          <div class="col-xs-12 col-sm-4">
+          <%= link_to boat_path(boat) do %>
             <div class="card">
-              <div class="card-content" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path boat.photo, height: 300, crop: :fill %>')">
-                <div class="card-category"><%= boat.category %></div>
-                <div class="card-body">
-                  <p>à partir de <%= boat.price_per_day %> CHF/jour</p>
-                </div>
-              </div>
-              <div class="card-footer">
-                <h2><%= link_to boat.name, boat_path(boat) %></h2>
-                <p><i class="far fa-compass">
-                </i>  <%= boat.address %></p>
+          <% end %>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card-content" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path boat.photo, height: 300, crop: :fill %>')">
+              <div class="card-category"><%= boat.category %></div>
+              <div class="card-body">
+                <p>à partir de <%= boat.price_per_day %> CHF/jour</p>
               </div>
             </div>
+          <div class="card-footer">
+          <h2><%= link_to boat.name, boat_path(boat) %></h2>
+          <p><i class="far fa-compass">
+          </i>  <%= boat.address %></p>
           </div>
+          </div>
+        </div>
         <% end %>
       </div>
+    </div>
   </div>
-</div>
 
 
 <div class="container">
@@ -46,3 +48,5 @@
         </script>
     </div>
 </div>
+
+
