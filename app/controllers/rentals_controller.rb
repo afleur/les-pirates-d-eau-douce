@@ -3,12 +3,24 @@ class RentalsController < ApplicationController
   end
 
   def show
-  end
-
-  def create
+    @rental = Rental.find(params[:id])
   end
 
   def new
+    @boat = Boat.find(params[:boat_id])
+    @rental = Rental.new
+  end
+
+  def create
+    @boat = Boat.find(params[:boat_id])
+    @rental = Rental.new(rental_params)
+    @rental.user = current_user
+    @rental.boat = @boat
+    if @rental.save
+      redirect_to boat_rental_path(@boat, @rental), notice: 'Votre bateau est réservé.'
+    else
+      render :new
+    end
   end
 
   def destroy
@@ -18,5 +30,11 @@ class RentalsController < ApplicationController
   end
 
   def update
+  end
+
+  private
+
+  def rental_params
+    params.require(:rental).permit(:checkindate, :checkoutdate, :user_id, :boat_id)
   end
 end
