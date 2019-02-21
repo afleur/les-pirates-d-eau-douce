@@ -4,6 +4,11 @@
 
 .rental-form {
   display: flex;
-  align-item: center;
   justify-content: space-around;
+}
+
+.rental-form-flex-end {
+  display: flex;
+  align-items: flex-end;
+  // justify-content: space-around;
 }
