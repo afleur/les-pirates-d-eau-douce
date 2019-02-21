@@ -1,0 +1,16 @@
+
+<div class="container">
+  <h2>Merci pour votre réservation <%= @rental.user.last_name %></h2>
+
+  <p>Les détails ci-dessous:</p>
+  <ul class="list-unstyled">
+    <option><%= @rental.boat.name %></option>
+    <option>Catégorie: <%= @rental.boat.category %></option>
+    <option>Du <%= @rental.checkindate %> au <%= @rental.checkoutdate %></option>
+    <option>Nombre de jour(s) réservé(s): <%= ((@rental.checkindate.to_date - @rental.checkoutdate.to_date).to_i)+1 %></option>
+    <option>Total: <%= (((@rental.checkindate.to_date - @rental.checkoutdate.to_date.to_date).to_i)+1) * @rental.boat.price_per_day %>CHF </option>
+  </ul>
+  <p></p>
+
+<%= link_to 'Menu', boats_path %>
+</div>

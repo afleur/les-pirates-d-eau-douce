@@ -1,0 +1,16 @@
+<h1>Rentals#new</h1>
+<p>Find me in app/views/rentals/new.html.erb</p>
+
+<div class="container center">
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset">
+    <h1>New rental</h1>
+
+    <%= simple_form_for [@boat, @rental] do |f| %>
+      <%= f.input :checkindate %>
+      <%= f.input :checkoutdate %>
+      <%= f.submit class: 'btn btn-primary' %>
+    <% end %>
+    </div>
+  </div>
+</div>
