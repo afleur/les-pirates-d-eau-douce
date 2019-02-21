@@ -60,7 +60,7 @@ puts 'Creating 20 fake boats...'
     Il permet une autre approche, très originale, pour visiter la rade de Genève et le petit lac. Le plan d'eau est entouré de montagnes et, par beau temps,  la vue sur le Mont blanc est au programme.
 
     La co-navigation permet également aux débutants, s'ils le souhaitent, de s'initier à la voile, en toute convivialité.",
-    address: "Genève",
+    address: "Port du Basset, Montreux, Suisse",
     user: User.all.sample,
   )
   boat_one.remote_photo_url = url_one
@@ -76,7 +76,7 @@ puts 'Creating 20 fake boats...'
     Il peut accueillir jusqu'à 10 passagers + le pilote.  (max: 800kg). Le cruise control assure une experience optimale pour le rider en maintenant le bateau à une vitesse constante.
     Il est également équipé d'une stereo bluetooth avec chargeur USB et entrée auxiliaire mini jack.
     Je peux vous proposer des horaires flexibles entre 8h et 22h. ",
-    address: "Genève",
+    address: "Port des Eaux Vives, Genève, Suisse",
     user: User.all.sample,
     )
   boat_two.remote_photo_url = url_two
@@ -90,7 +90,7 @@ puts 'Creating 20 fake boats...'
     description: "Nous vous emmenons avec plaisir pour une sortie en bateau avec la famille, entre amis ou avec votre entreprise. Idéal pour des baignades, admirer le paysage magnifique de la région lémanique, une balade à Yvoire ou découvrir les restaurants du bord du lac.
     Pour ceux qui désirent s'éclater en ski nautique ou en bouée tractée, l'équipement nécessaire est à bord du bateau pour assurer l'adrénaline. N’hésitez pas à nous communiquer vos envies personnelles afin de pouvoir vous faire une offre sur mesure.
     Notre skipper ‘David’ vous souhaite la bienvenue sur notre bateau LE GENT' LEMAN. Merci et à bientôt !",
-    address: "Nyon",
+    address: "Port de Nyon, Suisse",
     user: User.all.sample,
     )
   boat_three.remote_photo_url = url_three
@@ -106,7 +106,7 @@ puts 'Creating 20 fake boats...'
     Je peux vous accompagner si vous n'avez pas le permis pour vous faire découvrir le plaisir et la sensation d'une moto marine.
     Ce jet-ski est réservé à des personnes responsables et respectueuses, pas sérieux s' abstenir!
     Caution, permis bateau obligatoire et pièce d'identité vous seront demandés",
-    address: "Ouchy",
+    address: "Port d'Ouchy, Lausanne, Suisse",
     user: User.all.sample,
       )
       boat_four.remote_photo_url = url_four
@@ -121,7 +121,7 @@ puts 'Creating 20 fake boats...'
     Je vous propose de louer ce catamaran de 4 mètres afin de naviguer sur le lac Léman.
     Ce catamaran peut accueillir 2 personnes pour une belle journée de navigation.
     C'est un bateau sportif avec trapèzes et spinnaker. Les gilets de sauvetage sont bien entendu fournis avec le bateau. ",
-    address: "Evian",
+    address: "Port d'Evian-les-Bains, France",
     user: User.all.sample,
     )
   boat_five.remote_photo_url = url_five
@@ -139,7 +139,7 @@ puts 'Creating 20 fake boats...'
     Vous vous retrouverez dans un véritable environnement unique à part entière, non loin du massif du Jura, vous serez au milieu de la nature, sur l'eau, entouré de verdure et de villes très sympathique à visiter. Les nombreux petits ports sont aussi des endroits très agréable à visiter.
     A très bientôt,
     PS: Il n'y a pas besoin de permis pour naviguer avec mon bateau (seulement un 4 chevaux ce qui est suffisant pour un voilier) mais il est vivement conseillé de savoir faire un minimum de voile pour ne pas se retrouver en difficulté. Merci",
-    address: "Genève",
+    address: "Port Wilson, Genève, Suisse",
     user: User.all.sample,
     )
   boat_six.remote_photo_url = url_six
@@ -155,7 +155,7 @@ puts 'Creating 20 fake boats...'
     A l'intérieur : carré avec coin cuisine aménagé et coin repas transformable en couchette, cabine avec lit double, salle de bain avec WC et douche.
     Terrasse arrière abritée de plein pied avec le carré avec table amovible. Plage de bain.
     Le bateau consomme peu. Il est très maniable.",
-    address: "Versoix",
+    address: "Port Choiseul, Versoix, Suisse",
     user: User.all.sample,
     )
   boat_seven.remote_photo_url = url_seven
@@ -167,7 +167,7 @@ puts 'Creating 20 fake boats...'
     category: "Péniche",
     price_per_day: 130,
     description: "Grâce à ses couchages modulables dans la cabine et dans le salon, le Cirrus offre aux couples et aux petites familles (4 personnes) tout l'espace nécessaire pour conjuguer détente et style lors de leur séjour. Avec sa grande cabine à l'arrière, son salon et ses baies vitrées lumineuses, son pont supérieur et ses 2 postes de pilotage, le Cirrus dispose de tous les équipements nécessaires pour une croisière fluviale confortable !",
-    address: "Rolle",
+    address: "Port de Rolle, Suisse",
     user: User.all.sample,
     )
   boat_eight.remote_photo_url = url_eight
@@ -184,7 +184,7 @@ puts 'Creating 20 fake boats...'
     Je vous propose de louer ce superbe Four Winns Horizon 180 sur le Lac Léman.
     Ce dernier est idéal pour passer une journée en famille ou entre amis jusqu'à 7 personnes à bord! Il possède un moteur de 220 CV et a été mis à l'eau en 2002.
     Amateur de vitesse et de sports nautiques, vous ne serez pas déçus",
-    address: "Thonon-les-Bains",
+    address: "Port de Thonon-les-Bains, France",
     user: User.all.sample,
     )
   boat_nine.remote_photo_url = url_nine
@@ -200,7 +200,7 @@ puts 'Creating 20 fake boats...'
     Je vous propose mon Bateau Titanium à la location. C'est un modèle de 2018 tout neuf!
     Parfait pour passer des journées inoubliables sur notre magnifique Lac Léman.
     Idéalement situé au port de Sciez-Sur-Léman, au coeur de la baie d'Excenevex et de sa plage de sable fin, vous êtes à 10 minutes d'Yvoire, 20 minutes de Thonon-les-Bains, 30 minutes d'Évian...",
-    address: "Sciez-Sur-Léman",
+    address: "Port de Sciez-Sur-Léman, France",
     user: User.all.sample,
   )
   boat_ten.remote_photo_url = url_ten
@@ -224,7 +224,7 @@ En allant à l'ouest, vous pourrez vous rendre du côté de Genève avec ses nom
 
 Je peut aussi faire le capitaine pour les personnes sans permis !!
 Je connais très bien les plus beaux point de vues et crique.",
-    address: "Evian-les-Bains",
+    address: "Port d'Evian-les-Bains, France",
     user: User.all.sample,
     )
   boat_eleven.remote_photo_url = url_eleven
@@ -251,7 +251,7 @@ Il est disponible de Mai à Octobre, en fonction de la météo bien sûr.
 C'est un voilier idéal pour découvrir le Lac Léman et ainsi profiter d'une activité qui change de l'ordinaire !
 
 En co-navigation, je serai très heureux de vous recevoir, que vous soyez novice ou expert de la navigation. ",
-    address: "Versoix",
+    address: "Port Choiseul, Versoix, Suisse",
     user: User.all.sample,
     )
   boat_twelve.remote_photo_url = url_twelve
@@ -278,7 +278,7 @@ Il est proposé à la location pour des sorties sur le lac telles que:
 Pour de plus amples informations, n'hésitez pas à me contacter sur la messagerie de Click and Boat. Je serai ravi de vous aider dans votre projet de location.
 
 A bientôt, ",
-    address: "Genève",
+    address: "Port des Eaux-Vives, Genève, Suisse",
     user: User.all.sample,
     )
   boat_thirteen.remote_photo_url = url_thirteen
@@ -298,7 +298,7 @@ Le carburant est la charge du locataire.
 Il est demandé au moins deux ans de permis et une expérience nautique minimum.
 
 Possibilité de vous prêter un wake, gilet et palonnier moyennant 50 euros supplémentaires.",
-    address: "Genève",
+    address: "Port du Vieux-Stand, Lutry, Suisse",
     user: User.all.sample,
   )
   boat_fourteen.remote_photo_url = url_fourteen
@@ -315,7 +315,7 @@ Ce bateau est très puissant, avec son moteur de 350 cv, mais aussi très agréa
 
 Il dispose d'un bain de soleil avant et de deux matelas arrière parfait pour profiter du paysage et travailler son bronzage !
 ",
-    address: "Ouchy",
+    address: "Port de la Venoge, Saint-Sulpice, Suisse",
     user: User.all.sample,
     )
   boat_fifteen.remote_photo_url = url_fifteen
@@ -360,7 +360,7 @@ En ce qui concerne la demie journée nous avons différentes offres possibles :
 Venez tester l'aventure et profiter de ce moment unique sur notre bateau ultra confort en notre compagnie.
 
 Cordialement",
-    address: "Genève",
+    address: "Port d'Allaman, Suisse",
     user: User.all.sample,
     )
   boat_sixteen.remote_photo_url = url_sixteen
@@ -380,7 +380,7 @@ Avec sa conduite facile et agréable il vous permettra de vivre une expérience 
 Parmi les nombreux équipements du bateau vous trouverez une arche de wakeboard ou un taud de soleil pour se protéger des fortes chaleurs.
 
 Il possède également une plate-forme de bain à l'arrière du bateau agréable et spacieuse, intégrant une échelle  facile d'utilisation. Il est équipé de matériel stéréo hi-fi à bord, prenant en charge vos pistes USB, auxiliaire et Bluetooth.",
-    address: "Ouchy",
+    address: "Port de Saint-Prex, Suisse",
     user: User.all.sample,
     )
   boat_seventeen.remote_photo_url = url_seventeen
@@ -398,7 +398,7 @@ Nous louons ce TES 678 de 2010 au départ de Thonon-les-Bains. Ce voilier s'appe
 De tempérament joueur, il est toujours partant pour une virée sur le lac, pour satisfaire vos envies de baignades loin de la foule, explorer les côtes sauvages du Lac et ses eaux vert émeraude, ou bien même une soirée festive au coucher du soleil.
 
 C'est un voilier très confortable avec ses 2 cabines, il accueille agréablement 2 couples pour une ou plusieurs nuits. Nous conseillons d'embarquer à 4 personnes maximum pour être tout à fait à l'aise. ",
-    address: "Thonon-les-Bains",
+    address: "Port de Thonon-les-Bains, France",
     user: User.all.sample,
     )
   boat_eighteen.remote_photo_url = url_eighteen
@@ -422,7 +422,7 @@ Remarquable spécimen de la gamme «Grand Large», le Dufour 365 GL jouit d'une 
 De son côté, l’espace habitable propose des cabines très réussies, un carré aussi sympathique que pratique et un coin-cuisine bien équipé et peut  offrir 6 couchages agréables.
 
 Basé dans le petit port de Nernier (la perle du lac), à 1 km d'Yvoire, village très connu pour son charme.  Vous apprécierez le calme et la bonne ambiance de cet endroit.",
-    address: "Nernier",
+    address: "Port de Nernier, France",
     user: User.all.sample,
     )
   boat_nineteen.remote_photo_url = url_nineteen
@@ -445,7 +445,7 @@ Au départ de Sciez, vous pourrez vous balader sur tout le lac. Je vous conseill
 
 Le carburant est à la charge du locataire.
 ",
-    address: "Sciez-Sur-Léman",
+    address: "Port de Sciez-Sur-Léman, France",
     user: User.all.sample,
     )
   boat_twenty.remote_photo_url = url_twenty

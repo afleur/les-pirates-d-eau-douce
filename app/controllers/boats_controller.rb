@@ -19,22 +19,24 @@ class BoatsController < ApplicationController
   def index
     @boats = Boat.all
     @user = current_user
-  end
-
-  def index
     @boats = Boat.where.not(latitude: nil, longitude: nil)
     @markers = @boats.map do |boat|
       {
         lng: boat.longitude,
-        lat: boat.latitude
+        lat: boat.latitude,
+        infoWindow: render_to_string(partial: "infowindow", locals: { boat: boat }),
+        photo_url: helpers.asset_url('boat.photo')
       }
     end
   end
 
-
-
   def show
     @rental = Rental.new
+    @markers =
+      [{
+        lng: @boat.longitude,
+        lat: @boat.latitude
+      }]
   end
 
   private
