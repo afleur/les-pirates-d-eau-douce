@@ -21,6 +21,18 @@ class BoatsController < ApplicationController
     @user = current_user
   end
 
+  def index
+    @boats = Boat.where.not(latitude: nil, longitude: nil)
+    @markers = @boats.map do |boat|
+      {
+        lng: boat.longitude,
+        lat: boat.latitude
+      }
+    end
+  end
+
+
+
   def show
     @rental = Rental.new
   end
