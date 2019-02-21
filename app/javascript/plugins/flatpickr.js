@@ -1,4 +1,10 @@
-import 'flatpickr' from "flatpickr"
-import "flatpickr/dist/themes/airbnb.css" // Note this is important!
+import flatpickr from "flatpickr"
+import "flatpickr/dist/themes/airbnb.css" // A path to the theme CSS
+import rangePlugin from "flatpickr/dist/plugins/rangePlugin"
 
-flatpickr(".datepicker", {})
+flatpickr("#rental_checkindate", {
+  altInput: true,
+  plugins: [new rangePlugin({ input: "#rental_checkoutdate"})]
+})
+
+
