@@ -10,26 +10,23 @@
 
     <h4>Proposé par <%= @boat.user.first_name %></h4>
   </div>
-
-  <div class="center btn-padding">
-    <%= link_to "Book this boat", new_boat_rental_path(@boat.id), class:'btn btn-primary' %>
-  </div>
-
-
-    <form action="">
+  <hr>
+    <form class="rental-form">
       <div class="row">
         <%= simple_form_for [@boat, @rental] do |f| %>
-          <div class="col-xs-6">
+          <div class="col-xs-4">
             <div class="form-group">
-              <label for="checkindate">Date de début</label>
-                <%= f.input :checkindate, as: :string, required: false, input_html: {class: "datepicker"} %>
+              <%= f.input :checkindate, label: "Date de début", as: :string, required: false, input_html: {class: "datepicker"} %>
             </div>
           </div>
-          <div class="col-xs-6">
+          <div class="col-xs-4">
             <div class="form-group">
-              <label for="checkoutdate">Date de fin</label>
-              <%= f.input :checkoutdate, as: :string, required: false, input_html: {class: "datepicker"}  %>
-              <%= f.submit  class: 'btn btn-primary' %>
+              <%= f.input :checkoutdate, label: "Date de fin", as: :string, required: false, input_html: {class: "datepicker"}  %>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="form-group">
+              <%= f.submit "Réserver",  class: 'btn btn-primary '%>
             </div>
           </div>
         <% end %>
