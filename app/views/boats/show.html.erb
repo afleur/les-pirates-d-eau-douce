@@ -13,6 +13,7 @@
   <hr>
     <form class="rental-form">
       <div class="row">
+        <div class="rental-form-flex-end">
         <%= simple_form_for [@boat, @rental] do |f| %>
           <div class="col-xs-4">
             <div class="form-group">
@@ -26,10 +27,11 @@
           </div>
           <div class="col-xs-4">
             <div class="form-group">
-              <%= f.submit "Réserver",  class: 'btn btn-primary '%>
+              <%= f.submit "Réserver",  class: 'btn btn-primary'%>
             </div>
           </div>
         <% end %>
+        </div>
       </div>
     </form>
   <hr>
