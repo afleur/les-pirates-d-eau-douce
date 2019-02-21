@@ -6,7 +6,3 @@ flatpickr("#rental_checkindate", {
   altInput: true,
   plugins: [new rangePlugin({ input: "#rental_checkoutdate"})]
 })
-
-flatpickr({
-   “plugins”: [new rangePlugin({ input: “#secondRangeInput”})]
-});
