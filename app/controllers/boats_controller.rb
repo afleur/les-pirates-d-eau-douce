@@ -24,7 +24,7 @@ class BoatsController < ApplicationController
       {
         lng: boat.longitude,
         lat: boat.latitude,
-        infowindow: render_to_string(partial: "infowindow", locals: { boat: boat })
+        infoWindow: render_to_string(partial: "infowindow", locals: { boat: boat })
       }
     end
   end

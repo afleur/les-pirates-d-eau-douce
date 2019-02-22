@@ -1,8 +1,15 @@
-
 #map {
   height: 100vh;
+  width: 50vh;
   flex: 0 0 350px;
   position: sticky !important;
   top: 0 !important;
 }
 
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+}
