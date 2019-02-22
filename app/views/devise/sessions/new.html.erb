@@ -1,5 +1,4 @@
-<div class="container-signup">
-  <h2>Log in</h2>
+<div class="container-signup top-bottom-padding">
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
@@ -13,7 +12,7 @@
     <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
   </div>
 
-  <div class="form-actions">
+  <div class="form-actions center">
     <%= f.button :submit, "Log in" %>
   </div>
 <% end %>
