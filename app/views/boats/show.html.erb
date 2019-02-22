@@ -1,5 +1,5 @@
 
-<div class="container bottom-padding">
+<div class="container top-bottom-padding">
 
   <div class="center">
     <% unless @boat.photo_url.nil? %>
@@ -27,14 +27,16 @@
           </div>
           <div class="col-xs-4">
             <div class="form-group">
-              <%= f.submit "Réserver",  class: 'btn btn-primary'%>
+              <%= f.submit "Réserver",  class: 'btn btn-default'%>
             </div>
           </div>
         <% end %>
         </div>
       </div>
     </form>
+
   <hr>
+
   <div class="info">
     <p><i class="fas fa-ship"></i>  <%= @boat.category %></p>
     <p><i class="fas fa-map-marker-alt"></i>  <%= @boat.address %></p>
@@ -42,13 +44,14 @@
   </div>
 
   <hr>
+
   <h3> Description: </h3>
   <div class="desc">
     <p><%= @boat.description %></p>
   </div>
 
   <div class="center btn-padding">
-    <%= link_to "Back to list", boats_path, class:'btn btn-primary' %>
+    <%= link_to "Back to list", boats_path, class:'btn btn-default' %>
   </div>
 
 </div>
