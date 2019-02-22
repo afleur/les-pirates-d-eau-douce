@@ -11,7 +11,7 @@
     <h4>Proposé par <%= @boat.user.first_name %></h4>
   </div>
   <hr>
-    <form class="rental-form">
+    <div class="rental-form">
       <div class="row">
         <div class="rental-form-flex-end">
         <%= simple_form_for [@boat, @rental] do |f| %>
@@ -33,7 +33,7 @@
         <% end %>
         </div>
       </div>
-    </form>
+    </div>
   <hr>
   <div class="info">
     <p><i class="fas fa-ship"></i>  <%= @boat.category %></p>
