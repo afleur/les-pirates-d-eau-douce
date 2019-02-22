@@ -19,7 +19,7 @@ class RentalsController < ApplicationController
     if @rental.save
       redirect_to boat_rental_path(@boat, @rental), notice: 'Votre bateau est réservé.'
     else
-      render :new
+      redirect_to boat_path(@boat), alert: 'Votre réservation n\'a pas pu être prise en compte.'
     end
   end
 
