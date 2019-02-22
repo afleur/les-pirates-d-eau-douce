@@ -1,14 +1,9 @@
 #map {
-  height: 100vh;
-  width: 50vh;
-  flex: 0 0 350px;
-  position: sticky !important;
+  flex: 0 0 450px;
+  height: 550vh;
+  position: sticky !important; /* !important to override Gmaps inline CSS */
   top: 0 !important;
-  // flex: 0 0 450px;
-  // height: 500px;
-  // position: sticky !important; /* !important to override Gmaps inline CSS */
-  // top: 0 !important;
-  // margin-top: 100px;
+  margin-top: 40px;
 }
 
 .mapboxgl-popup {
