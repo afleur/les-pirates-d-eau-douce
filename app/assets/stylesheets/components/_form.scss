@@ -9,6 +9,11 @@
 
 .rental-form-flex-end {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  // justify-content: space-around;
+}
+
+.selected {
+margin-top: 30px;
   // justify-content: space-around;
 }
