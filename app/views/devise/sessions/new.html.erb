@@ -1,18 +1,8 @@
-<div class="space-between">
+<div class="container-signup">
   <h2>Log in</h2>
-    <p><%= link_to "✖️", boats_path %></p>
-  </div>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
-    <%= f.input :first_name,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "first_name" } %>
-    <%= f.input :last_name,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "last_name" } %>
     <%= f.input :email,
                 required: true,
                 autofocus: true,
@@ -30,4 +20,4 @@
 
 <%= render "devise/shared/links" %>
 
-
+</div>
