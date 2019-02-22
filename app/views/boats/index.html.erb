@@ -2,6 +2,13 @@
   <div class="center">
     <h1>Bateaux disponibles à la location</h1>
   </div>
+  <div
+    id="map"
+    style="width: 100%;
+    height: 50vh;"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+  ></div>
   <div class="container main-container container-info">
     <div class="row">
       <% @boats.each do |boat| %>
@@ -23,11 +30,4 @@
       <% end %>
     </div>
   </div>
-  <div
-    id="map"
-    style="width: 100%;
-    height: 50vh;"
-    data-markers="<%= @markers.to_json %>"
-    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-  ></div>
 </div>
