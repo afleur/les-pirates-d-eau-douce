@@ -1,60 +1,54 @@
-
-<div class="container bottom-padding">
-
+<div class="container top-bottom-padding">
   <div class="center">
     <% unless @boat.photo_url.nil? %>
       <%= cl_image_tag @boat.photo, height: 500, width: 900, crop: :fill %>
     <% end %>
-
     <h1> <%= @boat.name %> </h1>
-
     <h4>Proposé par <%= @boat.user.first_name %></h4>
   </div>
   <hr>
-    <div class="rental-form">
-      <div class="row">
-        <div class="rental-form-flex-end">
-        <%= simple_form_for [@boat, @rental] do |f| %>
-          <div class="col-xs-4">
-            <div class="form-group">
-              <%= f.input :checkindate, label: "Date de début", as: :string, required: false, input_html: {class: "datepicker"} %>
-            </div>
+  <div class="rental-form">
+    <div class="row">
+      <div class="rental-form-flex-end">
+      <%= simple_form_for [@boat, @rental] do |f| %>
+        <div class="col-xs-4">
+          <div class="form-group">
+            <%= f.input :checkindate, label: "Date de début", as: :string, required: false, input_html: {class: "datepicker"} %>
           </div>
-          <div class="col-xs-4">
-            <div class="form-group">
-              <%= f.input :checkoutdate, label: "Date de fin", as: :string, required: false, input_html: {class: "datepicker"}  %>
-            </div>
-          </div>
-          <div class="col-xs-4">
-            <div class="form-group">
-              <%= f.submit "Réserver",  class: 'btn btn-primary'%>
-            </div>
-          </div>
-        <% end %>
         </div>
+        <div class="col-xs-4">
+          <div class="form-group">
+            <%= f.input :checkoutdate, label: "Date de fin", as: :string, required: false, input_html: {class: "datepicker"}  %>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="form-group">
+            <%= f.submit "Réserver",  class: 'btn btn-default'%>
+          </div>
+        </div>
+      <% end %>
       </div>
     </div>
+  </div>
   <hr>
   <div class="info">
     <p><i class="fas fa-ship"></i>  <%= @boat.category %></p>
     <p><i class="fas fa-map-marker-alt"></i>  <%= @boat.address %></p>
     <p><i class="fas fa-coins"></i></i>  <%= @boat.price_per_day %> CHF / jour </p>
   </div>
-
   <hr>
   <h3> Description: </h3>
   <div class="desc">
     <p><%= @boat.description %></p>
   </div>
-
   <div class="center btn-padding">
-    <%= link_to "Back to list", boats_path, class:'btn btn-primary' %>
+    <%= link_to "Back to list", boats_path, class:'btn btn-default' %>
   </div>
-
-<div
-  id="map"
-  style="width: 100%;
-  height: 500px;"
-  data-markers="<%= @markers.to_json %>"
-  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-></div>
+  <div
+    id="map"
+    style="width: 100%;
+    height: 500px;"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+  ></div>
+</div>
