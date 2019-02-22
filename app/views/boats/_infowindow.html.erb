@@ -2,6 +2,6 @@
   <% unless boat.photo_url.nil? %>
     <%= cl_image_tag boat.photo, height: 100, width: 150, crop: :fill, radius: 5 %>
   <% end %>
-    <p><strong><%= boat.name  %></strong></p>
+    <p><strong> <%= link_to boat.name, boat_path(boat) %></strong></p>
     <p><%= boat.price_per_day%> CHF / jour</p>
 </div>
